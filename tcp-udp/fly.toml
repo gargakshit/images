@@ -1,0 +1,17 @@
+app = "tcp-udp"
+
+[build]
+
+[[services]]
+  protocol = "udp"
+  internal_port = 4001
+
+  [[services.ports]]
+    port = 4001
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 4000
+
+  [[services.ports]]
+    port = 4000
